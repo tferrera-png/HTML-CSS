@@ -62,7 +62,7 @@ section{
     padding-left: 30px;
 }
 
-section.sec-1 > p{
+section.sec-1 > p, section.sec-2 > p{
     background-color: rgba(0, 0, 0, 0.507);
     width: 400px;
 }
