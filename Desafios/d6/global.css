@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 :root{
- --fonte-titulo: 'Passion One';
+ --fonte-titulo: 'Passion One', cursive;
  --fonte-texto: 'Patrick Hand';
  --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
 }
@@ -11,6 +11,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html body{
@@ -28,7 +29,7 @@ header{
 header  h1{
     font-variant: small-caps;
     font-family: var(--fonte-titulo);
-    font-size: 136px;
+    font-size: 10vw;
     font-weight: bold;
     padding-top: 50px;
 }
@@ -40,6 +41,7 @@ header h1:hover{
 nav p{
     padding-bottom: 50px;
     font-family: var(--fonte-padrao);
+    font-size: 17px;
 }
 
 a{
@@ -57,35 +59,38 @@ section{
     padding-bottom: 10vh;
     background-color: white;
     font-family: var(--fonte-texto);
-    font-size: 47px;
+    font-size: 4vw;
     line-height: 2em;
     padding-left: 30px;
 }
 
-section.sec-1 > p, section.sec-2 > p{
-    background-color: rgba(0, 0, 0, 0.507);
-    width: 400px;
+.sec-1 > p, .sec-2 > p{
+    background-color: rgba(0, 0, 0, 0.384);
+    display: inline-block;
+    padding: 6px;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+.sec-1, .sec-2{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.589);
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .sec-1{
-    color: white;
     background-image: url(imagens/background001.jpg);
-    background-repeat: no repeat;
-    background-size: cover;
-    background-position: center right;
-    background-attachment: fixed;
 }
 
 .sec-2{
     background-image: url(imagens/background002.jpg);
-    background-repeat: no repeat;
-    background-size: cover;
-    background-position: center right;
-    background-attachment: fixed;
 }
 
 footer{
     background-color: black;
+    font-weight: bold;
     text-align: center;
     color: white;
     padding: 10px;
