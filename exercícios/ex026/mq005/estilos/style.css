@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+
 *{
     margin: 0px;
     padding: 0px;
@@ -68,4 +69,19 @@ article p{
     text-align: justify;
     padding-bottom: 20px;
     text-indent: 10px;
+}
+@media screen and (min-width:768px) {
+    #burguer{
+        display: none;
+    }
+    menu{
+        display: block;
+    }
+    menu > ul > li{
+        display: inline-block;
+    }
+
+    main{
+        width: 768px;
+    }
 }
